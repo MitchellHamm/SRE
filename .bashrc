@@ -116,20 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-function vpn {
-	STATE=$1
-	case "$STATE" in
-	up)     nmcli con | awk '/vpn/ { system("nmcli con up id " $1) }' 2>&1 | tee -a /var/log/boldvpn
-        	;;
-	down)   nmcli con | awk '/vpn/ { system("nmcli con down id " $1) }' 2>&1 | tee -a /var/log/boldvpn
-        	;;
-	status) nmcli con | grep -v wifi | grep -v tun | grep -v ethernet
-        	;;
-	*)      echo "vpn [up|down|status]"
-        	;;
-	esac
-}
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 . ~/git-completion.bash
