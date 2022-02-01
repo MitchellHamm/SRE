@@ -19,7 +19,7 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="https://github.com/MitchellHamm/SRE/tree/main/terraform/modules">Terraform Modules</a></li>
+    <li><a href="https://github.com/MitchellHamm/gke-private-cluster-terraform-module">GKE Private Cluster Terraform Module</a></li>
     <li><a href="#">Terraform Deployments</a></li>
     <li><a href="#">ArgoCD</a></li>
     <li><a href="#">Kustomize</a></li>
